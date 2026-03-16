@@ -76,6 +76,13 @@ This repo is based on practical implementation experience. Always validate techn
 - [Dynamics 365 Community](https://community.dynamics.com/)
 - [Microsoft Q&A (Power Apps)](https://learn.microsoft.com/en-us/answers/products/power-platform)
 
+### Related Repositories
+- [Power Platform Integration Patterns](https://github.com/brunsdon/power-platform-integration-patterns)
+- [Power Pages Cheat Sheet](https://github.com/brunsdon/power-pages-cheat-sheet)
+- [Power Pages Liquid Examples](https://github.com/brunsdon/power-pages-liquid-examples)
+- [Dataverse Schema Design Guide](https://github.com/brunsdon/dataverse-schema-design-guide)
+- [Dataverse Query Examples](https://github.com/brunsdon/dataverse-query-examples)
+
 ## Contributions
 
 Issues and pull requests are welcome.
