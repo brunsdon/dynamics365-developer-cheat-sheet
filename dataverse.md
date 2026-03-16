@@ -2,6 +2,22 @@
 
 Dataverse is the core data platform underpinning Dynamics 365 and much of the Power Platform.
 
+## Platform Overview
+
+```
+┌─────────────────────────────────────────────┐
+│              Power Platform                 │
+│  Power Apps │ Power Automate │ Power Pages  │
+├─────────────────────────────────────────────┤
+│              Dynamics 365 Apps              │
+│   Sales │ Customer Service │ Field Service  │
+├─────────────────────────────────────────────┤
+│                 Dataverse                   │
+│   Tables │ Relationships │ Security Roles   │
+│   Business Rules │ Plugins │ APIs           │
+└─────────────────────────────────────────────┘
+```
+
 ## Core Concepts
 
 Common building blocks include:
@@ -15,6 +31,19 @@ Common building blocks include:
 - choices
 - security roles
 - business process flows
+
+## Table Naming Conventions
+
+Custom tables and columns must have a publisher prefix. Keep names consistent and descriptive.
+
+```
+Standard table:       account, contact, opportunity
+Custom table:         prefix_projectrequest
+Custom column:        prefix_approvalstatus, prefix_estimatedvalue
+Choice (global):      prefix_priority
+```
+
+Avoid abbreviations that obscure intent. `prefix_reqstat` is less clear than `prefix_requeststatus`.
 
 ## Design Principles
 
@@ -44,6 +73,40 @@ Think carefully about:
 - cascading behaviour
 - parent-child data ownership
 - integration implications
+
+### Relationship Type Overview
+
+```mermaid
+erDiagram
+    ACCOUNT ||--o{ CONTACT : "1:N (has many)"
+    ACCOUNT ||--o{ OPPORTUNITY : "1:N (has many)"
+    CONTACT }o--o{ MARKETING_LIST : "N:N (belongs to many)"
+    OPPORTUNITY ||--|{ OPPORTUNITY_PRODUCT : "1:N (parent-child)"
+```
+
+### Cascade Behaviour Options
+
+| Behaviour       | Assign | Share | Unshare | Reparent | Delete | Merge |
+|-----------------|--------|-------|---------|----------|--------|-------|
+| Cascade All     | ✓      | ✓     | ✓       | ✓        | ✓      | ✓     |
+| Cascade Active  | ✓      | ✓     | ✓       | ✓        |        |       |
+| Cascade User    | ✓      | ✓     | ✓       | ✓        |        |       |
+| Restrict        |        |       |         |          | ✗      |       |
+| None            |        |       |         |          |        |       |
+
+## Security Model Overview
+
+```mermaid
+flowchart TD
+    User -->|member of| Team
+    User -->|assigned| SecurityRole
+    Team -->|assigned| SecurityRole
+    SecurityRole -->|grants| TablePrivileges
+    TablePrivileges -->|scoped to| BusinessUnit
+    BusinessUnit -->|parent of| ChildBusinessUnit
+```
+
+Privileges are additive — a user with multiple roles gets the union of all privileges.
 
 ## Common Mistakes
 
