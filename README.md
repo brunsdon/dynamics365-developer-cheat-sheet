@@ -44,6 +44,36 @@ This cheat sheet is aimed at:
 
 This repo is based on practical implementation experience. Always validate technical and architectural decisions against Microsoft's official documentation, solution governance standards, and project-specific non-functional requirements.
 
+## Useful Links
+
+### Microsoft Documentation
+- [Microsoft Dataverse documentation](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/)
+- [Dynamics 365 developer documentation](https://learn.microsoft.com/en-us/dynamics365/customer-engagement/developer/overview)
+- [Power Platform documentation](https://learn.microsoft.com/en-us/power-platform/)
+
+### Power Platform
+- [Power Apps](https://make.powerapps.com/)
+- [Power Automate](https://make.powerautomate.com/)
+- [Power Pages](https://make.powerpages.microsoft.com/)
+- [Power BI](https://app.powerbi.com/)
+
+### Development Tools
+- [Power Apps Developer Plan](https://www.microsoft.com/en-us/power-platform/products/power-apps/dev-tools)
+- [XrmToolBox](https://www.xrmtoolbox.com/)
+- [Power Platform CLI (pac)](https://learn.microsoft.com/en-us/power-platform/developer/cli/introduction)
+- [Plugin Registration Tool](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/download-tools-nuget)
+- [Dataverse Web API reference](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/reference/about)
+
+### Azure Integration
+- [Azure Service Bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/)
+- [Azure Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/)
+- [Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/)
+
+### Community & Support
+- [Power Platform Community](https://powerusers.microsoft.com/)
+- [Dynamics 365 Community](https://community.dynamics.com/)
+- [Microsoft Q&A (Power Apps)](https://learn.microsoft.com/en-us/answers/products/power-platform)
+
 ## Contributions
 
 Issues and pull requests are welcome.
