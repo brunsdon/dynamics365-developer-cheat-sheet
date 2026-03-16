@@ -12,6 +12,7 @@ This repo is designed as a quick working guide for common development, integrati
 - [Power Automate](power-automate.md)
 - [Solution Management](solution-management.md)
 - [DevOps](devops.md)
+- [XrmToolBox — Favourite Plugins](xrmtoolbox.md)
 
 ## Who this is for
 
