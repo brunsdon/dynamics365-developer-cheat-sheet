@@ -10,6 +10,7 @@ This repo is designed as a quick working guide for common development, integrati
 - [Plugin Development](plugin-development.md)
 - [Web API](web-api.md)
 - [Power Automate](power-automate.md)
+- [Power Pages](power-pages.md)
 - [Solution Management](solution-management.md)
 - [DevOps](devops.md)
 - [XrmToolBox — Favourite Plugins](xrmtoolbox.md)
