@@ -59,6 +59,13 @@ Bulk-manage columns across multiple tables — rename display names, change requ
 
 ---
 
+### Polymorphic Lookup Creator
+**By:** MscrmTools (Tanguy Touzard)
+
+Enables the creation and managing polymorphic lookup fields in Microsoft Dataverse environments. It simplifies the process of configuring lookups that can reference multiple tables.
+
+---
+
 ## Security & Access Tools
 
 ### Security Role Manager
@@ -125,6 +132,13 @@ Perform bulk record updates directly from Excel or CSV without writing custom co
 **By:** community
 
 Reassign or move records in bulk — change ownership, business unit, or team assignment across large record sets.
+
+---
+
+### Document Templates Mover
+**By:** MscrmTools
+
+Allows users to transfer document templates between different Microsoft Dataverse environments. It streamlines the migration process by enabling quick export and import of templates without manual recreation
 
 ---
 
